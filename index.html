@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Aprimorado</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #eef2f3;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 400px;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            gap: 12px;
+        }
+
+        label {
+            font-weight: 600;
+            color: #444;
+            text-transform: capitalize;
+        }
+
+        input {
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            border-color: #6c63ff;
+            outline: none;
+        }
+
+        .botoes {
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            color: white;
+            margin-top: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #6c63ff;
+        }
+
+        button[type="reset"] {
+            background-color: #ff6b6b;
+        }
+
+        .botoes:hover {
+            filter: brightness(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <label for="nome" class="caixa">primeiro nome</label>
+        <input type="text">
+        <label for="">segundo nome</label>
+        <input type="text">
+        <label for="">email</label>
+        <input type="text">
+        <label for="">telefone</label>
+        <input type="number">
+        <label for="">data de nascimento</label>
+        <input type="number">
+        <button type="submit" class="botoes">enviar</button>
+        <button type="reset" class="botoes">apagar</button>
+    </form>
+
+</body>
+</html>
